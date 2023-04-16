@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "prettier",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
+  "parser":"@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint","eslint-plugin-simple-import-sort","import"],
+  "rules": {
+    "prettier/prettier": ["warn", { "usePrettierrc": true }],
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@next/next/no-img-element": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  },
+  "settings": {
+    "next": {
+      "rootDir": "./src"
+    }
+  },
+  "env": {
+    "jest": true
+  }
+}
